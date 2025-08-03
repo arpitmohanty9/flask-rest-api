@@ -1,0 +1,8 @@
+#docker run -d -p 5005:5000 rest-apis-flask-python      
+services:
+  web:
+    build: .
+    ports:
+      - "5005:5000"
+    volumes:
+      - .:/app
